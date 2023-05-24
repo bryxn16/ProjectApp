@@ -9,14 +9,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="137dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="604dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="186dp"
+        android:fontFamily="casual"
         android:text="Meme SoundBoard!"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         app:layout_constraintVertical_bias="1.0" />
@@ -48,5 +52,64 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="385dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="114dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="296dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="382dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="327dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="182dp"
+        android:layout_height="55dp"
+        android:background="#68A1CF"
+        android:backgroundTint="#4E7EA5"
+        android:text="Click Here!"
+        app:icon="@android:drawable/ic_media_play"
+        app:rippleColor="#496F8E"
+        app:strokeColor="#416C8E"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
+        android:layout_width="75dp"
+        android:layout_height="103dp"
+        app:srcCompat="@drawable/images"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView2"
+        android:layout_width="72dp"
+        android:layout_height="106dp"
+        android:rotationY="180"
+        app:imageRotate=""
+        app:srcCompat="@drawable/images"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="286dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
