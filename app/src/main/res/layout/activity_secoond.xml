@@ -295,15 +295,15 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="136dp" />
+        android:text="Witch Laugh"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="138dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="WEAVE"
         tools:layout_editor_absoluteX="256dp"
         tools:layout_editor_absoluteY="138dp" />
 
@@ -311,7 +311,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Yeah-h Boy"
         tools:layout_editor_absoluteX="93dp"
         tools:layout_editor_absoluteY="241dp" />
 
@@ -319,47 +319,47 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="251dp"
+        android:text="Sad Trombone"
+        tools:layout_editor_absoluteX="238dp"
         tools:layout_editor_absoluteY="241dp" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="343dp" />
+        android:text="Man Scream"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="342dp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="253dp"
+        android:text="Whip"
+        tools:layout_editor_absoluteX="265dp"
         tools:layout_editor_absoluteY="342dp" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="94dp"
+        android:text="Bruh"
+        tools:layout_editor_absoluteX="102dp"
         tools:layout_editor_absoluteY="447dp" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="446dp" />
+        android:text="Woah"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="447dp" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="My God"
         tools:layout_editor_absoluteX="93dp"
         tools:layout_editor_absoluteY="553dp" />
 
@@ -367,23 +367,23 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="554dp" />
+        android:text="OHHH"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="553dp" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="92dp"
+        android:text="My name is Jeff"
+        tools:layout_editor_absoluteX="77dp"
         tools:layout_editor_absoluteY="659dp" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="253dp"
+        android:text="LOUD Scream"
+        tools:layout_editor_absoluteX="239dp"
         tools:layout_editor_absoluteY="659dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
