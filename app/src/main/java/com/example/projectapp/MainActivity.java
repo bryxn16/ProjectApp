@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnNextPage = findViewById(R.id.btn_nextpage);
         btnWlaugh = findViewById(R.id.btn_wlaugh);
         btnWeave = findViewById(R.id.btn_weave);
         btnYeahboy = findViewById(R.id.btn_yeahboy);
@@ -59,13 +58,15 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
              @Override
             public void onClick(View v) {
-                playWlaugh();
+
+                 playWlaugh();
             }
         });
 
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playWeave();
             }
         });
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playYeahboy();
             }
         });
@@ -80,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playTrombone();
             }
         });
@@ -87,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playMscream();
             }
         });
@@ -94,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playWhip();
             }
         });
@@ -101,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playBruh();
             }
         });
@@ -108,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playWoah();
             }
         });
@@ -115,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playMygod();
             }
         });
@@ -122,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playOhhh();
             }
         });
@@ -129,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playJeff();
             }
         });
@@ -136,35 +146,64 @@ public class MainActivity extends AppCompatActivity {
         btnWlaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 playLscream();
             }
         });
 
-        public void playWlaugh(){
-            mediaPlayer mp = MediaPlayer.create(this, R.raw.sample_wlaugh);
-            mp.start();
-            mp.setOnCompletionListner(new mediaPlayer.OnCompletionListner(){
+    }
 
-        }
+    private void playWlaugh() {
+         MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_memes_witch);
+         mp.start();
+         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+             @Override
+             public void onCompletion(MediaPlayer mediaPlayer) {
+                 mp.stop();
+                 mp.release();
+                 mp = null;
+             }
+         });
+    }
 
-        Intent secondActivity = new Intent(MainActivity.this, secondActivty.class);
-
-        //String sendThisString = "whatever string I want to send ";
-       // String sendThisToo = "The other string I want to send ";
-
-        secondActivity.putExtra("data1", sendThisString);
-        secondActivity.putExtra("data2", sendThisToo);
-
-        btnNextPage.setOnClickListener(new View.OnClickListener() {
+    private void playWeave() {
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_memes_weave);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(secondActivity);
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mp.stop();
+                mp.release();
+                mp = null;
             }
         });
-
-
-
-
-
     }
+
+    private void playYeahboy() {
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_memes_yeahboy);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+    private void playTrombone() {
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_memes_trombone);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+
+
 }

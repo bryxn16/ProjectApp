@@ -82,7 +82,7 @@
         app:layout_constraintGuide_begin="327dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nextpage"
         android:layout_width="182dp"
         android:layout_height="55dp"
         android:background="#68A1CF"
@@ -98,7 +98,7 @@
         android:id="@+id/imageFilterView"
         android:layout_width="75dp"
         android:layout_height="103dp"
-        app:srcCompat="@drawable/images"
+        app:srcCompat="@drawable/image_memesoundboard_arrow"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="286dp" />
 
@@ -108,8 +108,17 @@
         android:layout_height="106dp"
         android:rotationY="180"
         app:imageRotate=""
-        app:srcCompat="@drawable/images"
+        app:srcCompat="@drawable/image_memesoundboard_arrow"
         tools:layout_editor_absoluteX="310dp"
         tools:layout_editor_absoluteY="286dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="109dp"
+        android:layout_height="166dp"
+        app:srcCompat="@drawable/image_memesoundboard_skull"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="146dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
