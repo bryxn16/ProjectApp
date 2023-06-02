@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SoundBoardMeme">
 
     <TextView
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="79dp"
         android:layout_marginEnd="74dp"
         android:layout_marginBottom="186dp"
+        android:background="#000000"
+
         android:fontFamily="casual"
         android:text="Meme SoundBoard!"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="normal"
@@ -30,95 +35,106 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="30dp" />
+        app:layout_constraintGuide_percent="0.04103967" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="698dp" />
+        app:layout_constraintGuide_percent="0.95485634" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="30dp" />
+        app:layout_constraintGuide_percent="0.0729927" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="385dp" />
+        app:layout_constraintGuide_percent="0.9367397" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="114dp" />
+        app:layout_constraintGuide_percent="0.27737227" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="296dp" />
+        app:layout_constraintGuide_percent="0.72019464" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="382dp" />
+        app:layout_constraintGuide_percent="0.5225718" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="327dp" />
+        app:layout_constraintGuide_percent="0.4487004" />
 
     <Button
-        android:id="@+id/nextpage"
+        android:id="@+id/btn_nextpage"
         android:layout_width="182dp"
         android:layout_height="55dp"
         android:background="#68A1CF"
         android:backgroundTint="#4E7EA5"
         android:text="Click Here!"
         app:icon="@android:drawable/ic_media_play"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
         app:rippleColor="#496F8E"
-        app:strokeColor="#416C8E"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="327dp" />
+        app:strokeColor="#416C8E" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/imageFilterView"
         android:layout_width="75dp"
         android:layout_height="103dp"
-        app:srcCompat="@drawable/image_memesoundboard_arrow"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="286dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/btn_nextpage"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/image_memesoundboard_arrow" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/imageFilterView2"
         android:layout_width="72dp"
         android:layout_height="106dp"
         android:rotationY="180"
-        app:imageRotate=""
-        app:srcCompat="@drawable/image_memesoundboard_arrow"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="286dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/image_memesoundboard_arrow" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="109dp"
         android:layout_height="166dp"
-        app:srcCompat="@drawable/image_memesoundboard_skull"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="146dp" />
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/image_memesoundboard_skull" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
